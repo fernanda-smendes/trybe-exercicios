@@ -1,3 +1,3 @@
-# trybe-exercicios
+# Portifólio de Exercícios 
 Exercícios realizados na Trybe
-# Meu repositório de exercícios 
+# Meu primeiro repositório de exercícios 
