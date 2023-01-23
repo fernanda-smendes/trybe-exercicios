@@ -1,0 +1,12 @@
+h1, p {
+text-align: center;
+}
+
+ol:hover{
+    background-color: aquamarine;
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
