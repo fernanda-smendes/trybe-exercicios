@@ -1,19 +1,16 @@
-const myName = "Fernanda";
-const birthCity = "Mogi das Cruzes-SP";
-let birthYear = 2030;
+let currentHour = 19;
+let message = "";
 
-console.log(myName);
-console.log(birthYear);
-console.log(birthCity);
+if (currentHour >= 22) {
+   message = "Não deveríamos comer nada, é hora de dormir";
+} else if (currentHour >= 18 && currentHour < 22) {
+   message = "Rango da noite, vamos jantar =D";
+} else if (currentHour >= 14 && currentHour < 18) {
+   message = "Vamos fazer um bolo pro café da tarde?";
+} else if (currentHour >= 11 && currentHour < 14) {
+   message = "Hora do almoço!";
+} else if (currentHour >= 4 && currentHour < 11) {
+   message = "hmm, cheiro de café recém-passado"
+}
 
-const nota = 90
-
- if (nota >= 80) {
-    console.log("Parabéns, você faz parte do grupo das pessoas aprovadas!")
- }
- else if (nota < 80 && >= 60) {
-    console.log("Você está na nossa fila de espera")
- }
- else if (nota < 60) {
-    console.log("Infelizmente, você reprovou")
- }
+console.log(message);
