@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+      </main>
+</body>
+<script>
+    const pai = document.getElementById("pai");
+    const irmaoOndeEsta = document.createElement('section');
+    irmaoOndeEsta.id = 'irmaoDoElementoOndeEsta';
+    pai.appendChild(irmaoOndeEsta);
+
+    const pai2 = document.getElementById("elementoOndeVoceEsta");
+    const filhoOndeEsta = document.createElement('section');
+    filhoOndeEsta.id = "filhoDoElementoondeEsta";
+    pai2.appendChild(filhoOndeEsta);
+
+    const paiFilho = document.getElementById("primeiroFilhoDoFilho");
+    const filhoDoFilho = document.createElement("section");
+    filhoDoFilho.id = "filhoDoPrimeiroFilhoDoFilho"
+    paiFilho.appendChild(filhoDoFilho);
+
+    const terceiroFilho = filhoDoFilho
+    .parentElement. parentElement. nextElementSibling;
+</script>
+</html>
