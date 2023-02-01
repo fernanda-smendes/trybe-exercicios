@@ -1,9 +1,34 @@
-console.log(document.getElementById("elementoOndeVoceEsta").parentNode);
+//Acesse o elemento elementoOndeVoceEsta.
 
-console.log(document.getElementById("primeiroFilhoDoFilho"). innerText = "Paçoca, meu cãozinho");
 
-console.log(document.getElementById("pai").firstElementChild);
+console.log(document.getElementById("elementoOndeVoceEsta"));
 
-console.log(document.getElementById("elementoOndeVoceEsta").previousElementSibling);
+// Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+const pai = elementoOndeVoceEsta.parentElement;
+pai.style.color = 'red';
 
-console.log(document.getElementById("elementoOndeVoceEsta").lastElementChild);
+//Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+const primeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild;
+primeiroFilhoDoFilho.innerText = "Paçoca, meu cãozinho";
+
+//Acesse o primeiroFilho a partir de pai.
+
+const primeiroFilho = pai.firstElementChild;
+
+//Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+
+
+const primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling;
+
+//Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+
+const elementText = elementoOndeVoceEsta.nextSibling;
+
+// Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+
+const terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
+
+// Agora acesse o terceiroFilho a partir de pai.
+
+const terceiroFilho2 = pai.lastElementChild.previousElementSibling;
+//EXERCÍCIO IMCOMPLETO
