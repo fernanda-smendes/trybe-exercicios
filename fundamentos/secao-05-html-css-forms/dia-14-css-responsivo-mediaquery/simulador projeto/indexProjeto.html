@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./styleProjeto.css">  <title>Trybewarts</title>
+</head>
+<body>
+    <main>
+    <form id="evaluation-form" action="">
+        <label for="input-name"></label>
+        <input type="text" placeholder="Nome" id="input-name">
+
+        <label for="input-lastname"></label>
+        <input type="text" placeholder="Sobrenome" id="input-lastname">
+
+        <label for="input-email"></label>
+        <input type="email" placeholder="Email" id="input-email">
+
+        <label for="house"></label>
+        <select name="Casas Trybewarts" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+
+
+
+        <div id="family-tryber">
+            <label for="Family" id="label-family">Qual sua família?</label>
+            <div><input type="radio" name="family" value="Frontend">Frontend</div>
+            <div><input type="radio" name="family" value="Backend">Backend</div>
+            <div><input type="radio" name="family" value="FullStack">FullStack</div>
+          </div>
+          <div id="content-tryber">
+            <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <div><input type="checkbox" class="subject" value="HoFs">HoFs</div>
+            <div><input type="checkbox" class="subject" value="Jest">Jest</div>
+            <div><input type="checkbox" class="subject" value="Promises">Promises</div>
+            <div><input type="checkbox" class="subject" value="React">React</div>
+            <div><input type="checkbox" class="subject" value="SQL">SQL</div>
+            <div><input type="checkbox" class="subject" value="Python">Python</div>
+          </div>
+
+        
+          
+<input type="checkbox" id="agreement">
+<button type="submit" id="submit-btn">Envio</button>
+
+        <input type="checkbox" id="input">
+        <button type="submit" id="botao" >Enviar</button>
+        
+
+    </form>
+    
+    </main>
+
+
+</body>
+</html>
+<script>
+  
+
+document.getElementById("botao").disabled = true;
+document.getElementById("input").addEventListener("input", function(event){
+    let conteudo = document.getElementById("input");
+    if (conteudo === null) {
+      document.getElementById("botao").disabled = true;
+    } else {
+      document.getElementById("botao").disabled = false;
+    }
+});
+const btSubmiteEnviar = document.getElementById("submit-btn");
+const checkB = document.getElementById("agreement");
+
+btSubmiteEnviar.disabled = true;
+  checkB.addEventListener('click', function(event){
+    if (checkB === null) {
+        btSubmiteEnviar.disabled = true;
+    } else {
+        btSubmiteEnviar.disabled = false;
+    }
+});
+</script>

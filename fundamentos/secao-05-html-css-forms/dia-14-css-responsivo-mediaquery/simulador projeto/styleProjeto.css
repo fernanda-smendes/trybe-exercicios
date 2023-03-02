@@ -1,0 +1,13 @@
+main{
+    display: flex;
+}
+
+#evaluation-form{
+    width: 675px;
+    flex-direction: column
+}
+ 
+#family-tryber{
+    display: flex;
+    flex-direction: column;
+}
