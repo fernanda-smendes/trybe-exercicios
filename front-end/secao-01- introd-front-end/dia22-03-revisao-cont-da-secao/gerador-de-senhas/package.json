@@ -1,20 +1,16 @@
 {
-  "name": "trybe-exercicios",
+  "name": "gerador-de-senhas",
   "version": "1.0.0",
-  "description": "Exercícios realizados na Trybe # Meu primeiro repositório de exercícios",
+  "description": "Gerador de Senhas Seguras",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fernanda-smendes/trybe-exercicios.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fernanda-smendes/trybe-exercicios/issues"
+  "dependencies": {
+    "nanoid": "^4.0.1"
   },
-  "homepage": "https://github.com/fernanda-smendes/trybe-exercicios#readme"
+  "type": "module"
 }
