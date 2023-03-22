@@ -1,0 +1,35 @@
+body {
+    background-color: #505050;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+main {
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 10px, 30px;
+}
+h2 {
+    color: aquamarine;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+}
+button {
+    background-color: darkcyan;
+    border: 0 none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    color: azure;
+    border: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
