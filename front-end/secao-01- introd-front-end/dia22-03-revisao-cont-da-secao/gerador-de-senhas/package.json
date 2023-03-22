@@ -4,12 +4,14 @@
   "description": "Gerador de Senhas Seguras",
   "main": "index.js",
   "scripts": {
-    "dev": "vite --open"
+    "dev": "vite --open",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "clipboard-copy": "^4.0.1",
     "nanoid": "^4.0.1",
     "vite": "^4.2.1"
   },
